@@ -1,0 +1,36 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script src="annyang.min.js"></script>
+<script type="text/javascript">
+ $( document ).ready(function() {
+                $("#sendButton").click(function(){
+                    var val = $('#textbox').val();
+                    $('<li class = "list-group-item">'+val+'</li>').appendTo('#ulList');
+                });
+            });
+			 </script>
+			 <script>
+
+  // Let's define a command.
+  var commands = {
+    'hello *val': function(val) { alert('Hello world!'); }
+  };
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening.
+  annyang.start();
+
+
+</script>
+
+</head>
+<body>
+
+<input type="text" id="textbox">
+<button type="button" class="btn btn-lg btn-success" id="sendButton" onclick=addNames()>add</button>
+<ul class="list-group" id="ulList"></ul>
+</body>
+</html>
