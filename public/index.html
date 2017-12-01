@@ -16,14 +16,15 @@
 
   // Let's define a command.
   var commands = {
-    'hello *valu': myappend };
+    'hello *valu': function(valu){
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode(valu);
+        node.appendChild(textnode);
+        document.getElementById("myList").appendChild(node);
+    };
+   };
 
-	var myappend =function(valu){
-			var node = document.createElement("LI");
-			var textnode = document.createTextNode(valu);
-			node.appendChild(textnode);
-			document.getElementById("myList").appendChild(node);
-	};
+
 
   // Add our commands to annyang
   annyang.addCommands(commands);
