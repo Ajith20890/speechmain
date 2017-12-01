@@ -14,7 +14,10 @@
 
   // Let's define a command.
   var commands = {
-    'hello *val': function(val) { alert('Hello world!'); }
+    'hello *valu': function(valu)
+    {
+        textbox.value = valu;
+     }
   };
 
   // Add our commands to annyang
