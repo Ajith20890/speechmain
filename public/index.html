@@ -11,13 +11,14 @@
             });
 			 </script>
 			 <script>
-
+		$(document).ready(function(){
+    $("textbox").focus(function(val){
+        alert("Value: " + $("#textbox").val());
+    });
+});
   // Let's define a command.
   var commands = {
-    'hello *valu': function(valu)
-    {
-        textbox.value = valu;
-     }
+    'hello *val': function(val) { alert('Hello world!'); }
   };
 
   // Add our commands to annyang
