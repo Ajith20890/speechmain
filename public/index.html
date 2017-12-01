@@ -17,11 +17,11 @@
   // Let's define a command.
   var commands = {
     'hello *valu': function(valu){
-        var node = document.createElement("LI");
-        var textnode = document.createTextNode(valu);
-        node.appendChild(textnode);
-        document.getElementById("myList").appendChild(node);
+var paragraph = document.getElementById("p");
+var text = document.createTextNode("This just got added");
+paragraph.appendChild(text);
    };
+ }
 
 
 
@@ -46,10 +46,11 @@
 <button type="button" class="btn btn-lg btn-success" id="sendButton" onclick=addNames()>add</button>
 <ul class="list-group" id="ulList"></ul> -->
         <!-- <script type="text/javascript" src="cordova.js"></script> -->
-        // <script type="text/javascript" src="js/index.js"></script>
-		<ul id="myList">
+        <!-- // <script type="text/javascript" src="js/index.js"></script> -->
+		<!-- <ul id="myList">
 		<li>AK</li>
-		</ul>
+		</ul> -->
+    <p id="p"></p>
     </body>
 </html>
 
