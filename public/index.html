@@ -19,12 +19,10 @@
     'hello *valu': myappend };
 
 	var myappend =function(valu){
-		if(valu.length > 0){
 			var node = document.createElement("LI");
 			var textnode = document.createTextNode(valu);
 			node.appendChild(textnode);
 			document.getElementById("myList").appendChild(node);
-			}
 	};
 
   // Add our commands to annyang
@@ -50,6 +48,7 @@
         <!-- <script type="text/javascript" src="cordova.js"></script> -->
         <script type="text/javascript" src="js/index.js"></script>
 		<ul id="myList">
+		<li>AK</li>
 		</ul>
 		<p id="pdi"></p>
     </body>
