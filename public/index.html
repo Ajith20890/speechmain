@@ -13,14 +13,16 @@
             });
 			 </script> -->
 			 <script>
-
+var ak = [];
   // Let's define a command.
   var commands = {
     'hello *valu': function(valu){
 var paragraph = document.getElementById("p");
 // var text = document.createTextNode(valu);
 // paragraph.appendChild(text);
-paragraph.textContent += <br> + valu;
+paragraph.textContent += " " + valu;
+ak.push(valu);
+console.log(ak)
    }
  };
 
