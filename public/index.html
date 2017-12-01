@@ -18,8 +18,9 @@
   var commands = {
     'hello *valu': function(valu){
 var paragraph = document.getElementById("p");
-var text = document.createTextNode(valu);
-paragraph.appendChild(text);
+// var text = document.createTextNode(valu);
+// paragraph.appendChild(text);
+paragraph.textContent += "<br>" + valu;
    }
  };
 
